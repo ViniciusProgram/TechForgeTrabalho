@@ -1,4 +1,5 @@
 /* CSS reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -157,7 +158,7 @@ footer {
 #trilha a,
 .jogo a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 0, 0);
 }
 
 /* Estilos para dispositivos móveis */
@@ -235,4 +236,10 @@ footer {
     .menu-mobile {
         display: none; /* Oculta o menu de navegação móvel para desktop */
     }
+}
+
+.cenarioo a {
+    text-decoration: none;
+    color: red;
+    font-size: 28px;
 }
