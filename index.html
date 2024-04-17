@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Nave Espacial</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site do Meu jogo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagens/images.png">
+    </style>
+</head>
+
+<body>
+    <div class="video">
+        <video src="video jogo/jogo.mp4" controls width="100%"></video>
+        <br>
+        <div class="jogo">
+            <a href="https://viniciustefode.itch.io/jogodocaralho" target="_blank">CLIQUE AQUI PARA JOGAR!</a>
+        </div>
+    </div>
+    
+    <header>
+        <div class="menu-mobile">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+            <div class="nav-mobile">
+                <!-- Conteúdo do menu móvel aqui -->
+                <ul>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#personagens">Personagens</a></li>
+                    <li><a href="#Ficha">Ficha</a></li>
+                    <li><a href="#cenario">Cenário</a></li>
+                    <li><a href="#trilha">Trilha sonora</a></li>
+                    <li><a href="#regras">Regras</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#Ficha">Ficha</a></li>
+                <li><a href="#cenario">Cenário</a></li>
+                <li><a href="#trilha">Trilha sonora</a></li>
+                <li><a href="#regras">Regras</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="quem-somos">
+            <div class="centro">
+                <h2>Quem somos</h2>
+                <!--comentario-->
+                <img src="imagens/" alt="" title="">
+                <p>
+                <div class="adolescentes">
+                    <i>Um adolescente perdido no mundo tentando fazer um bom jogo!</i>
+                </div>
+                </p>
+            </div>
+        </section>
+
+        <section id="personagens">
+            <div class="centro">
+                <h2>Personagens</h2>
+                <p>Conheça nossos personagens:</p>
+                <div class="grid">
+                    <div class="coluna">
+                        <img src="imagens/nave.png" alt="Nave Princ." title="Nave Princ.">
+                        <p>
+                            <strong>Nave Héroi</strong>
+                        </p>
+                        <p>
+                            Personagem principal
+                        </p>
+                    </div>
+
+                    <div class="coluna">
+                        <img src="imagens/inimigo-removebg-preview.png" alt="Inimigo" title="Inimigo">
+                        <p>
+                            <strong>Inimigo</strong>
+                        </p>
+                        <p>
+                            Vilão
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section id="Ficha">
+            <h2>Ficha</h2>
+            <h3>
+                <ul>
+                    <li>Engine: Construct 3</li>
+                    <li>Plataforma: PC</li>
+                    <li>Mecânica: Top-Down</li>
+                    <li>Dispositivos de Entrada: Mouse, Teclado</li>
+                </ul>
+            </h3>
+            <div class="coluna">
+                <img src="imagens/ficha.png" alt="ficha" title="Ficha">
+            </div>
+        </section>
+
+        <section id="cenario">
+
+            <h2>Cenario</h2>
+            <div class="coluna">
+                <img src="imagens/cenario1.jpeg" alt="Cenario" title="Cenario">
+                <img src="imagens/cenario2.jpg" alt="Cenario" title="Cenario">
+            </div>
+        </section>
+
+        <section id="trilha">
+
+            <h2>Trilha sonora</h2>
+            <h3><a href="https://depositphotos.com/br/sound-effects/tiro-de-arma-de-jogo-de.html" target="_blank">Clique
+                    aqui! Para ver onde peguei a trilha sonora</a></h3>
+        </section>
+
+        <section id="regras">
+
+            <h2>Regras do Jogo</h2>
+            <h3>
+                <ul>
+                    <li><i>1. O jogador precisa fazer uma certa quantia de pontos para avançar.</i></li>
+                    <li><i>2. Evitar colisões de inimigos para não perder vida.</i></li>
+                    <li><i>3. Começar da fase 1.</i></li>
+                </ul>
+            </h3>
+        </section>
+
+        <section id="contato">
+            <div class="centro">
+                <h2>Entre em contato</h2>
+                <form name="formContato">
+                    <label for="nome">Digite seu nome completo</label>
+                    <input type="text" name="nome" id="nome" required>
+                    <br>
+                    <label for="email">Digite seu e-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                    <br>
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" name="mensagem" id="mensagem" required rows="10"></textarea>
+                    <br>
+                    <button type="submit">
+                        Enviar mensagem
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Marcos Vinicius - Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

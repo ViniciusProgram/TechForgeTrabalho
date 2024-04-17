@@ -1,0 +1,238 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 10px #ccc;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 18px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+header nav ul li a:hover {
+    color: #000;
+}
+
+.centro {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+body {
+    font-family: Arial, Verdana;
+    font-size: 16px;
+    padding-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+#personagens,
+#cenario,
+#regras {
+    background-color: #8a8989;
+}
+
+section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid .coluna {
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+}
+
+.grid .coluna img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid .coluna p,
+#personagens p {
+    margin: 15px;
+    text-align: center;
+}
+
+input,
+textarea {
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+button {
+    background-color: greenyellow;
+    padding: 10px;
+    border: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+#Ficha,
+#cenario {
+    border-radius: 10px;
+}
+
+.adolescentes {
+    text-align: center;
+    font-size: 22px;
+}
+
+#trilha,
+#regras {
+    text-align: center;
+}
+
+#regras li {
+    list-style-type: none;
+}
+
+.video {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.jogo {
+    font-size: 32px;
+    background-color: rgb(133, 133, 133);
+    text-decoration: none;
+}
+
+#trilha a,
+.jogo a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    header nav {
+        display: none; /* Oculta o menu de navegação para dispositivos móveis */
+    }
+    .menu-mobile {
+        display: block;
+        text-align: right;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .toggle-btn {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .toggle-btn span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    .nav-mobile {
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        display: none;
+    }
+
+    #toggle:checked + .nav-mobile {
+        display: block;
+    }
+
+    .nav-mobile ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-mobile ul li {
+        padding: 10px 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .nav-mobile ul li:first-child {
+        border-top: none;
+    }
+
+    .nav-mobile ul li a {
+        display: block;
+        padding: 10px 20px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .nav-mobile ul li a:hover {
+        background-color: #f0f0f0;
+    }
+}
+
+/* Estilos para desktop */
+@media only screen and (min-width: 769px) {
+    .menu-mobile {
+        display: none; /* Oculta o menu de navegação móvel para desktop */
+    }
+}
